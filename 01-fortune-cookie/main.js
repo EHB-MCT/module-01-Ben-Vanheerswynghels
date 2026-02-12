@@ -21,4 +21,9 @@ let button = document.querySelector("#cookie-btn");
 //      generate a random index
 //      get the fortune string
 //      update the display
+let index;
+button.addEventListener("click", () => {
+    index = Math.round(Math.random(0,11));
+    display.innerHTML=fortunes[index];
+});
 
